@@ -1,0 +1,330 @@
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+}
+
+body{
+	background-image: url(http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-134570.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.fullscreen {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	overflow: visible;
+
+}
+
+/*Trechos de código para a sidebar*/
+
+.sidebar{
+	position: absolute;
+	margin:0px;
+	height: 100%;
+	background-color: #091540;
+	padding: 0px;
+	
+}
+
+
+ul.sidebarlist {
+	margin: 0px;
+	padding:0px;
+}
+
+ul.sidebarlist li{
+	list-style: none;
+	padding-bottom: 2.5px;
+	padding-top: 2.5px;
+	font-size: 15px;
+	position: relative;
+}
+
+ul.sidebarlist li.logoImg {
+	height: 70px;
+	padding-top:10px;
+}
+
+ul.sidebarlist li a{
+	background-color: #1F2A51;
+	padding: 10px 5px ;
+	display: block;
+	text-decoration: none;
+}
+
+ul.sidebarlist li ul{
+	visibility: hidden;
+	transition: 0.3s;
+	position: absolute;
+	left: 100%;
+	top: -1%;
+	/*background-color: #091540;*/
+	background-color: #1F2A51;
+	height: 45px;
+	padding: 0px;
+	border-radius: 3px;
+
+}
+
+ul.sidebarlist li:hover > ul{
+	visibility: visible;
+}
+
+ul.sidebarlist li ul li a{
+	margin:0px;
+}
+
+/*Fim dos códigos para a sidebar*/
+
+
+
+.contentPart{
+	position: relative;
+	padding-left:0px;
+	padding-right: 0px;
+}
+
+.boxstyle {
+	padding: 25px; 
+	margin-top: 3em;
+	margin-bottom: 3em;
+	background-color: white;
+	border-radius: 10px;
+	border: solid 1px;
+	border-color: #1F4E75;
+
+}
+
+.noboxstyle {
+	padding: 25px; 
+	/*background-color: white;*/
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+	background-color: rgba(250, 250, 250, 0.6);
+
+}
+
+/*Campo de data do formulário noboxstyle*/
+.date{ 
+	padding-left:0px;
+	padding-right: 3px;
+}
+
+#eventsList{
+	overflow: scroll;
+}
+
+.uptitle {
+	background-color: #091540;
+	font-family: Verdana;
+}
+
+.initialTitle{
+	color: white;
+}
+
+
+.colorBack {
+	background-color: #B0C4DE;
+}
+
+
+#apresent {
+	text-align: justify;
+	font-family:  sans-serif;
+}
+
+.bigicon {
+	font-size: 35px;
+}
+
+.textError {
+	color: red;
+}
+
+.textInfo {
+	color: blue;
+}
+
+.barLogo {
+	padding: 5px;
+}
+
+.menuFunc {
+	margin-top: 2em;
+}
+
+.active {
+	font-weight: bold;
+}
+
+.borda{
+	border: solid;
+}
+
+.adjustLogo {
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto; /*Centraliza a imagem*/
+}
+
+.line {
+      color: #A9A9A9;
+      background-color: #A9A9A9;
+      height: 1px;
+}
+
+.logout {
+	color: white;
+}
+
+/*.imgPerfil {
+	width: 200px;
+	height: 250px;
+	border-radius: 5px;
+}*/
+
+.boxPerfil {
+	position: relative;
+	padding: 10px; 
+	background-color: rgba(9,21,64, 0.8);
+	margin-top: 10em;
+	margin-bottom: 3em;
+	border-radius: 10px;
+	border: solid 1px;
+
+	width: 225px;
+	height: auto;
+
+	color:white;
+}
+
+.btnSize1 {
+	width: 140px; 
+	height: 40px;
+}
+
+.btnSize2 {
+	width: 200px; 
+	height: 40px;
+}
+
+.btnSize3 {
+	width: 80px; 
+	height: 40px;
+}
+
+.acervoResult {
+	border: solid 2px; 
+	border-radius: 5px; 
+	overflow: auto; 
+	height: 500px;
+	margin-bottom: 15px;
+}
+
+.jumboPersonalizado {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: inherit;
+  /*background-color: #eee; */
+  background-color: #87CEEB;
+}
+
+.zeroPad {
+	padding: 0;
+}
+
+.navbarRodape {
+	position: relative; 
+    bottom: 0px; 
+    width: 97%; 
+    height: 70px;
+    margin-left: 0.75%;
+    margin-right: 2.25%;
+    margin-bottom: 0px;
+    padding: auto;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0px -3px 10px #696969;
+}
+
+.tableWidth {
+	width: 30.3%;
+}
+
+/* Eliminar o header na impressao do relatorio*/
+@media print {
+  head, header * {
+    visibility: hidden;
+  }
+  #printable, #printable * {
+    visibility: visible;
+  }
+  #printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.fonteRelatorio {
+	font-family: courier;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#eventoAtivo {
+    text-decoration: none;
+    color: #4169E1;
+}
+
+#eventoAtivo:hover {
+	color: #0000FF;
+	font-weight: bold;
+}
+
+#eventoInativo {
+    text-decoration: none;
+    color: #FF6347;
+}
+
+#eventoInativo:hover {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.editarEvento {
+	padding:0;
+	float: right;
+}
+
+.eventoTempo{
+	display: inline-block;
+	width: 20%;
+}
+
+.eventoTab {
+	display: inline-block;
+	width: 20%;
+}
+
+.eventoTitulo {
+	display: inline-block;
+	width: 45%;
+}
+
+p.news{
+	text-align: justify;
+}
+
