@@ -60,24 +60,6 @@ body{
 	text-decoration: none;
 }
 
-/*.sidebarlist li ul{
-	visibility: hidden;
-	transition: 0.3s;
-	position: absolute;
-	left: 100%;
-	top: -1%;
-	/*background-color: #091540;*/
-	/*background-color: #1F2A51;
-	height: 45px;
-	padding: 0px;
-	border-radius: 3px;
-
-}*/
-
-/*.sidebarlist li:hover > ul{
-	visibility: visible;
-}*/
-
 .sidebarlist li ul li a{
 	margin:0px;
 }
@@ -86,25 +68,39 @@ body{
 .sidebarlist input{
 	position: absolute;
 	opacity: 0;
+	display: none;
 }
 
-.sidebarlist label{
+.sidebarlist .submenu label{
 	position: relative;
 	display: block;
-	background: #4d5158;
-	color: #ffffff;
-	font-size: 20px;
+	background: #1F2A51;
+	color: #337ab7;
+	font-size: 15px;
+	cursor: pointer;
+    transition: all .4s; 
+    padding: 10px 5px;
+    margin-bottom: 0px;
 }
 
-.sidebarlist ul{
+.sidebarlist .submenu  ul{
+	width: 100%;
+	padding: 0px;
+	overflow: hidden;
 	display: none;
+	max-height: 0;
 
 }
 
-.sidearlist input: checked ~ ul{
+.sidebarlist .submenu input:checked ~ ul{
 	display: block;
 	height: auto;
-	transform: all;
+	max-height: 200px;
+
+}
+
+.sidebarlist .submenu ul li{
+	padding: 0px;
 }
 
 /*Fim dos códigos para a sidebar*/

@@ -26,34 +26,41 @@
                                 <li class="logoImg"><img src="imgSys/logo_sam.jpg" width="115" height="45" class="adjustLogo img-responsive" /></li>
                                 <li role="presentation" class="active"><a href="inicio.php"><span class="glyphicon glyphicon-home" style="font-size:20px"></span> &nbsp; Início</a></li>
 
-                                 <li role="presentation">
-                                    <input type="checkbox" name ="teste" id="teste">
-                                    <label for="teste">Acervo</label>
+                                 <li role="presentation" class="submenu">
+                                    <input type="checkbox" name ="acervo" id="acervo">
+                                    <label for="acervo"><span class="glyphicon glyphicon-book" style="font-size:20px"></span>&nbsp;Acervo</label>
                                      
-                                        <!-- Teste de permissao para habilitar ediçao de acervo -->
-                                     <ul style="margin:0 auto;" class="dropdown-menu">
-                                                        <li><center><a href="acervo.php"><span class="glyphicon glyphicon-book" style="font-size:20px"></span>&nbsp;Verificar Acervo</a></center></li>
+                                        
+                                     <ul style="margin:0 auto;">
+                                        <li><center><a href="acervo.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Verificar Acervo</a></center></li>
 
-                                                        <li><center><a href="gerenciar-acervo.php"><span class="glyphicon glyphicon-wrench" style="font-size:20px"></span>&nbsp;Gerenciar Acervo</a></center></li>
+                                        <li><center><a href="gerenciar-acervo.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Gerenciar Acervo</a></center></li>
 
                                     </ul>
 
                                  </li>
 
+                                <li role="presentation" class="submenu">
+                                    <input type="checkbox" name ="noticia" id="noticia">
+                                    <label for="noticia"><span class="glyphicon glyphicon-list-alt" style="font-size:20px"></span>&nbsp;Notícias</label>
+                                        
+                                    <ul style=" margin:0 auto;">
+                                        <li><center><a href="ver-noticia.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Ver Notícias</a></center></li>
 
-                                <li role="presentation" class="dropdown"> 
-                                    <a href="ver-noticia.php" data-toggle="dropdown" class="dropdown-toggle disabled"><span class="glyphicon glyphicon-list-alt" style="font-size:20px"></span> &nbsp; Notícias</a>
-                                        <ul style=" margin:0 auto;" class="dropdown-menu">
-                                            <li><center><a href="nova-noticia.php"><span class="glyphicon glyphicon-pencil" style="font-size:20px"></span>&nbsp;Cadastrar Notícia</a></center></li>
-                                        </ul>
+                                        <li><center><a href="nova-noticia.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Cadastrar Notícia</a></center></li>
+                                    </ul>
                                 </li>
-                                <li role="presentation" class="dropdown">
-                                    <a href="evento-interno.php" data-toggle="dropdown" class="dropdown-toggle disabled"><span class="glyphicon glyphicon-calendar" style="font-size:20px"></span> &nbsp; Eventos</a>
+
+                                <li role="presentation" class="submenu">
+                                    <input type="checkbox" name ="eventos" id="eventos">
+                                    <label for="eventos"><span class="glyphicon glyphicon-calendar" style="font-size:20px"></span>&nbsp;Eventos</label>
                                         
                                         <!-- Teste de permissao para habilitar criação de eventos -->
                                         
-                                                    <ul style="margin:0 auto;" class="dropdown-menu">
-                                                        <li><center><a href="criar-evento.php"><span class="glyphicon glyphicon-plus-sign" style="font-size:20px"></span>&nbsp;Criar evento</a></center></li>
+                                                    <ul style="margin:0 auto;">
+                                                        <li><center><a href="evento-interno.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Gerenciar Eventos</a></center></li>
+                                                        <li><center><a href="criar-evento.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Criar Evento</a></center></li>
+
                                                     </ul>
                                         
                                 </li>
