@@ -27,7 +27,7 @@ body{
 
 .sidebar{
 	position: absolute;
-	margin:0px;
+	margin-top:0px;
 	height: 100%;
 	background-color: #091540;
 	padding: 0px;
@@ -42,8 +42,7 @@ body{
 
 .sidebarlist li{
 	list-style: none;
-	padding-bottom: 2.5px;
-	padding-top: 2.5px;
+	border-bottom: 1px inset #091540;
 	font-size: 15px;
 	position: relative;
 }
@@ -62,6 +61,7 @@ body{
 
 .sidebarlist li ul li a{
 	margin:0px;
+	background-color: #ABD2FA;
 }
 
 
@@ -74,13 +74,23 @@ body{
 .sidebarlist .submenu label{
 	position: relative;
 	display: block;
+	font-weight: normal;
 	background: #1F2A51;
 	color: #337ab7;
 	font-size: 15px;
 	cursor: pointer;
     transition: all .4s; 
-    padding: 10px 5px;
+    padding: 0px;
     margin-bottom: 0px;
+
+}
+/*ícone para indicar submenu */
+.sidebarlist .submenu label a::after{
+	font-family: FontAwesome;
+    content: "\f078";
+    font-weight: bold;
+    float: right;
+    	
 }
 
 .sidebarlist .submenu  ul{
@@ -89,7 +99,6 @@ body{
 	overflow: hidden;
 	display: none;
 	max-height: 0;
-
 }
 
 .sidebarlist .submenu input:checked ~ ul{
@@ -99,8 +108,20 @@ body{
 
 }
 
+.sidebarlist .submenu input:checked ~ label a::after{
+	font-family: FontAwesome;
+    content: "\f077";
+    font-weight: bold;
+    float: right;
+
+}
+
 .sidebarlist .submenu ul li{
 	padding: 0px;
+	border-left: 4px outset #337ab7;
+	
+	
+
 }
 
 /*Fim dos códigos para a sidebar*/
@@ -208,11 +229,6 @@ body{
 	color: white;
 }
 
-/*.imgPerfil {
-	width: 200px;
-	height: 250px;
-	border-radius: 5px;
-}*/
 
 .boxPerfil {
 	position: relative;

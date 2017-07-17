@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
@@ -28,13 +29,13 @@
 
                                  <li role="presentation" class="submenu">
                                     <input type="checkbox" name ="acervo" id="acervo">
-                                    <label for="acervo"><span class="glyphicon glyphicon-book" style="font-size:20px"></span>&nbsp;Acervo</label>
+                                    <label for="acervo"><a><span class="glyphicon glyphicon-book" style="font-size:20px"></span>&nbsp; Acervo</a></label>
                                      
                                         
                                      <ul style="margin:0 auto;">
-                                        <li><center><a href="acervo.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Verificar Acervo</a></center></li>
+                                        <li><a href="acervo.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Verificar Acervo</a></li>
 
-                                        <li><center><a href="gerenciar-acervo.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Gerenciar Acervo</a></center></li>
+                                        <li><a href="gerenciar-acervo.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Gerenciar Acervo</a></li>
 
                                     </ul>
 
@@ -42,38 +43,36 @@
 
                                 <li role="presentation" class="submenu">
                                     <input type="checkbox" name ="noticia" id="noticia">
-                                    <label for="noticia"><span class="glyphicon glyphicon-list-alt" style="font-size:20px"></span>&nbsp;Notícias</label>
+                                    <label for="noticia"><a><span class="glyphicon glyphicon-list-alt" style="font-size:20px"></span>&nbsp; Notícias</a></label>
                                         
                                     <ul style=" margin:0 auto;">
-                                        <li><center><a href="ver-noticia.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Ver Notícias</a></center></li>
+                                        <li><a href="ver-noticia.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Ver Notícias</a></li>
 
-                                        <li><center><a href="nova-noticia.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Cadastrar Notícia</a></center></li>
+                                        <li><a href="nova-noticia.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Cadastrar Notícia</a></li>
                                     </ul>
                                 </li>
 
                                 <li role="presentation" class="submenu">
                                     <input type="checkbox" name ="eventos" id="eventos">
-                                    <label for="eventos"><span class="glyphicon glyphicon-calendar" style="font-size:20px"></span>&nbsp;Eventos</label>
+                                    <label for="eventos"><a><span class="glyphicon glyphicon-calendar" style="font-size:20px"></span>&nbsp; Eventos</a></label>
                                         
-                                        <!-- Teste de permissao para habilitar criação de eventos -->
-                                        
-                                                    <ul style="margin:0 auto;">
-                                                        <li><center><a href="evento-interno.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Gerenciar Eventos</a></center></li>
-                                                        <li><center><a href="criar-evento.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Criar Evento</a></center></li>
+                                        <ul style="margin:0 auto;">
+                                            <li><a href="evento-interno.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Gerenciar Eventos</a></li>
+                                            <li><a href="criar-evento.php"><span class="glyphicon glyphicon-menu-right" style="font-size:20px"></span>&nbsp;Criar Evento</a></li>
 
-                                                    </ul>
-                                        
+                                        </ul>   
                                 </li>
 
 
                                 
-                                            <li role="presentation"><a href="ger-usuarios.php">
-                                                <span class="glyphicon glyphicon-user" style="font-size:20px"></span> &nbsp; Gerenciar Usuários
-                                                </a></li>
+                                <li role="presentation"><a href="ger-usuarios.php">
+                                    <span class="glyphicon glyphicon-user" style="font-size:20px"></span> &nbsp; Gerenciar Usuários
+                                    </a>
+                                </li>
                                 
                                 
 
-                                <li role="presentation"><a href="index.php?logout" class="logout"><span class="glyphicon glyphicon glyphicon-log-out" style="font-size:20px"></span> &nbsp; Logout</a></li>
+                                <li role="presentation" ><a href="index.php?logout" class="logout"><span class="glyphicon glyphicon glyphicon-log-out" style="font-size:20px"></span> &nbsp; Logout</a></li>
 
                             </ul>     
             
